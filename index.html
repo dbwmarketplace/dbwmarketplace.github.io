@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head><title>DBW Marketplace - Home</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+    function openLink(){
+    var frm = document.createElement("IFRAME");
+    var source = document.createAttribute("src")
+    var id = document.createAttribute("id")
+    var classe = document.createAttribute("class")
+    source.value = "https://gumroad.com/l/DiscordBotWorkshop"
+    id.value = "tempframe"
+    classe.value = "frame"
+    frm.setAttributeNode(source);
+    frm.setAttributeNode(id);
+    frm.setAttributeNode(classe);
+    document.body.appendChild(frm);
+    //button
+    var frm = document.createElement("BUTTON");
+    var source = document.createAttribute("onclick")
+    var id = document.createAttribute("id")
+    var classe = document.createAttribute("class")
+    source.value = "closeLink()"
+    id.value = "tempbutton"
+    classe.value = "sbutton"
+    frm.setAttributeNode(source);
+    frm.setAttributeNode(id);
+    frm.setAttributeNode(classe);
+    document.body.appendChild(frm);
+    frm.innerHTML = "Close";
+    }
+    //
+    function closeLink(){
+        var elem = document.getElementById("tempframe");
+        elem.parentNode.removeChild(elem);
+    //button
+    var elem = document.getElementById("tempbutton");
+        elem.parentNode.removeChild(elem);
+    }
+    </script>
+</head>
+<body >
+    <a herf="index.html">
+    <div class="menu">
+        <a target="_blank" href="https://github.com/dbwmarketplace">Upload</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="box">
+    </div>
+    <div class="box2">
+    <h2 class="txth2">Discord Bot Workshop</h2>
+<p class="txt">Marketplace</p>
+    </div>
+    <p class="info">Welcome to the Discord Bot Workshop Marketplace! Here you can find</p>
+    <p class="info">flows (Raw Data) and Mods made and published by the community!</p>
+    <button class="button" onclick="openLink()">Purchase DBW</button>
+</body>
+</html>

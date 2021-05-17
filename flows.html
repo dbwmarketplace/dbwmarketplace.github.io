@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head><title>DBW Marketplace - Flows</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body >
+    <!--MainScript-->
+    <script>
+        var json = fetch("https://raw.githubusercontent.com/dbwmarketplace/flows/main/Flow%20Guide").then(response => response.json()).then(data =>{
+            console.log(data)
+            for(i =0;i < data.length;i++){
+                var frm = document.createElement("BUTTON");
+                var source = document.createAttribute("onclick")
+                var classe = document.createAttribute("class")
+                source.value = "openLink('" + data[i].Name + "')"
+                console.log("openLink('" + data[i].Name + "')")
+                classe.value = "item"
+                frm.setAttributeNode(source);
+                frm.setAttributeNode(classe);
+                document.body.appendChild(frm);
+                frm.innerHTML = data[i].Name + " Made By " + data[i].Creator;
+                console.log(data[i].Name)
+                //Button2
+                var frm = document.createElement("BUTTON");
+                var source = document.createAttribute("onclick")
+                var classe = document.createAttribute("class")
+                source.value = "openInfo('" + data[i].Description + "', '" + data[i].Creator +"')"
+                console.log("openInfo('" + data[i].Description + "')")
+                classe.value = "iteminfo"
+                frm.setAttributeNode(source);
+                frm.setAttributeNode(classe);
+                document.body.appendChild(frm);
+                frm.innerHTML = "Info";
+                console.log(data[i].Name)
+            }
+    });
+    </script>
+    <!--SecondaryScript-->
+    <script type="text/javascript">
+        function openLink(name){
+            window.open("https://raw.githubusercontent.com/dbwmarketplace/flows/main/" + name);
+        }
+
+        function openInfo(name, creator){
+        var frm = document.createElement("h3");
+        var id = document.createAttribute("id")
+        var classe = document.createAttribute("class")
+        id.value = "tempframe"
+        classe.value = "framelet"
+        frm.setAttributeNode(id);
+        frm.setAttributeNode(classe);
+        document.body.appendChild(frm);
+        frm.innerHTML = name + ", In case that you have questions, please contact " + creator + " since they are the flow's creator!";
+        //button
+        var frm = document.createElement("BUTTON");
+        var source = document.createAttribute("onclick")
+        var id = document.createAttribute("id")
+        var classe = document.createAttribute("class")
+        source.value = "closeLink()"
+        id.value = "tempbutton"
+        classe.value = "sbutton"
+        frm.setAttributeNode(source);
+        frm.setAttributeNode(id);
+        frm.setAttributeNode(classe);
+        document.body.appendChild(frm);
+        frm.innerHTML = "Close";
+        }
+        //
+        function closeLink(){
+            var elem = document.getElementById("tempframe");
+            elem.parentNode.removeChild(elem);
+        //button
+        var elem = document.getElementById("tempbutton");
+            elem.parentNode.removeChild(elem);
+        }
+        </script>
+    <a herf="index.html">
+    <div class="menu">
+        <a target="_blank" href="https://github.com/dbwmarketplace">Upload</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="box">
+    </div>
+    <div class="box2">
+    <h2 class="txth2">Marketplace Flows</h2>
+<p class="txt">Raw Data</p>
+    </div>
+    <p class="info">Raw Data that you can insert and install on your bot!</p>
+    <form target="_blank" action="https://github.com/dbwmarketplace/flows/tree/main">
+        <input class="button" type="submit" value="Upload" />
+    </form>
+</body>
+</html>
