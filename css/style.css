@@ -275,13 +275,9 @@ main{
     font: menu;
     border-radius: 15px;
     font-weight: 200;
-    transition: color 0.25s, background 0.25s, width 0.25s, height 0.25s, right 0.25s, top 0.25s, margin 0.25s;
+    transition: color 0.25s, background 0.25s;
 }
 .item:hover{
-    margin: 18px;
-    right: 1.27%;
-    width: 214px;
-    height: 164px;
     color: white;
     background: rgba(255, 255, 255, 0.267);
 }
@@ -309,14 +305,6 @@ main{
     border-radius: 25px;
     font-weight: 200;
     transition: color 0.25s, background 0.25s, width 0.25s, height 0.25s, right 0.25s, top 0.25s, margin 0.25s;
-}
-.iteminfo:hover{
-    margin: 25px;
-    right: 1.27%;
-    width: 69px;
-    height: 49px;
-    color: white;
-    background: rgb(73, 73, 73);
 }
 .framelet{
     transition: letter-spacing 5s;
