@@ -1,5 +1,4 @@
-
-body{
+body {
     padding: 0px;
     margin: 0px;
     background-color: rgba(30, 31, 34, 1);
@@ -7,14 +6,16 @@ body{
     opacity: 1;
     transition: opacity .5s;
 }
-.menu{
+
+.menu {
     position: sticky;
     top: 0px;
-    background-color:rgb(24, 25, 27);
+    background-color: rgb(24, 25, 27);
     margin: 0px;
     overflow: hidden;
 }
-.menu a{
+
+.menu a {
     font: Menu;
     text-decoration: none;
     font-size: 17px;
@@ -23,19 +24,20 @@ body{
     color: rgb(151, 151, 151);
     text-align: center;
     padding: 24px 24px;
-    font-weight:100;
+    font-weight: 100;
     float: right;
     transition: color 0.5s, font-size 0.5s;
 }
-.menu img{
 
+.menu img {
     padding: 24px 24px;
     width: 150px;
     height: 45px;
     float: left;
     transition: color 0.5s, font-size 0.5s;
 }
-.menu h2{
+
+.menu h2 {
     font: Menu;
     text-decoration: none;
     font-size: 27px;
@@ -44,18 +46,21 @@ body{
     color: rgb(1, 0, 34);
     text-align: center;
     padding: 0px 24px;
-    font-weight:150;
+    font-weight: 150;
     float: left;
     transition: color 0.5s, padding 0.5s;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: rgb(255, 255, 255);
     font-size: 21px;
 }
-.selected{
+
+.selected {
     color: white;
 }
-.txt{
+
+.txt {
     transition: letter-spacing 0.5s;
     font: Menu;
     text-decoration: none;
@@ -64,9 +69,10 @@ body{
     color: rgb(0, 0, 0);
     text-align: center;
     text-justify: auto;
-    font-weight:100;
+    font-weight: 100;
 }
-.info{
+
+.info {
     font: Menu;
     text-decoration: none;
     font-size: 20px;
@@ -74,10 +80,11 @@ body{
     color: rgb(231, 231, 231);
     text-align: center;
     text-justify: auto;
-    font-weight:100;
+    font-weight: 100;
     transition: letter-spacing 1s;
 }
-.txth2{
+
+.txth2 {
     transition: letter-spacing 5s;
     font: Menu;
     text-decoration: none;
@@ -86,9 +93,10 @@ body{
     color: rgb(0, 0, 0);
     text-align: center;
     text-justify: auto;
-    font-weight:300;
+    font-weight: 300;
 }
-.tittle{
+
+.tittle {
     -webkit-text-stroke: 1px black;
     font: Menu;
     text-decoration: none;
@@ -97,9 +105,10 @@ body{
     color: rgb(19, 19, 19);
     text-align: center;
     text-justify: auto;
-    font-weight:200;
+    font-weight: 200;
 }
-.box{
+
+.box {
     background: rgba(200, 200, 200, 0.89);
     padding: 6px 24px;
     text-align: left;
@@ -108,9 +117,10 @@ body{
     letter-spacing: 1px;
     font: caption;
     font-size: 24px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
-.box2{
+
+.box2 {
     background: rgba(238, 238, 238, 0.89);
     padding: 6px 24px;
     text-align: left;
@@ -119,10 +129,10 @@ body{
     letter-spacing: 1px;
     font: caption;
     font-size: 24px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
-main{
-    
+
+main {
     vertical-align: auto;
     width: 80%;
     height: 100vs;
@@ -134,9 +144,10 @@ main{
     letter-spacing: 1px;
     font: caption;
     font-size: 24px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
-.button{
+
+.button {
     border: 2.5px;
     border-color: #ffffff;
     border-style: solid;
@@ -162,12 +173,14 @@ main{
     font-weight: 500;
     transition: color 0.25s, background 0.25s, width 0.25s;
 }
-.button:hover{
+
+.button:hover {
     width: 210px;
     color: rgb(65, 65, 65);
     background: rgb(255, 255, 255);
 }
-.status{
+
+.status {
     margin: 0;
     position: absolute;
     top: 60%;
@@ -183,7 +196,8 @@ main{
     font: caption;
     border-radius: 50px;
 }
-.frame{
+
+.frame {
     transition: letter-spacing 5s;
     font: Menu;
     text-decoration: none;
@@ -194,7 +208,7 @@ main{
     text-align: center;
     display: block;
     text-justify: auto;
-    font-weight:300;
+    font-weight: 300;
     float: center;
     position: fixed;
     top: 0%;
@@ -205,11 +219,13 @@ main{
     height: 90%;
     transition: width 1s, height 1s;
 }
-.frame:hover{
+
+.frame:hover {
     width: 72%;
     height: 92%;
 }
-.sbutton{
+
+.sbutton {
     border: 2.5px;
     border-color: #ffffff;
     border-style: solid;
@@ -236,12 +252,14 @@ main{
     font-weight: 500;
     transition: color 0.25s, background 0.25s, width 0.25s;
 }
-.sbutton:hover{
+
+.sbutton:hover {
     width: 210px;
     color: rgb(65, 65, 65);
     background: rgb(255, 255, 255);
 }
-.dynframe{
+
+.dynframe {
     float: center;
     position: absolute;
     top: 0%;
@@ -252,7 +270,8 @@ main{
     height: 90%;
     transition: width 1s, height 1s;
 }
-.item{
+
+.item {
     border: 1px;
     border-color: #ffffff;
     border-style: solid;
@@ -277,11 +296,13 @@ main{
     font-weight: 200;
     transition: color 0.25s, background 0.25s;
 }
-.item:hover{
+
+.item:hover {
     color: white;
     background: rgba(255, 255, 255, 0.267);
 }
-.iteminfo{
+
+.iteminfo {
     border: 1px;
     border-color: #ffffff;
     border-style: solid;
@@ -304,13 +325,18 @@ main{
     font: menu;
     border-radius: 25px;
     font-weight: 200;
-    transition: color 0.25s, background 0.25s, width 0.25s, height 0.25s, right 0.25s, top 0.25s, margin 0.25s;
+    transition: color 0.25s, background 0.25s, width 0.25s, height 0.25s, right 0.25s, top 0.25s, margin 0.25s, opacity 0.25s;
 }
-.framelet{
+
+.iteminfo:hover {
+    opacity: 50%;
+}
+
+.framelet {
     transition: letter-spacing 5s;
-border-color: white;
-border: 2px;
-border-style: solid;
+    border-color: white;
+    border: 2px;
+    border-style: solid;
     border-radius: 15px;
     font: Menu;
     text-decoration: none;
@@ -321,7 +347,7 @@ border-style: solid;
     text-align: center;
     display: block;
     text-justify: auto;
-    font-weight:300;
+    font-weight: 300;
     float: center;
     position: fixed;
     top: 70%;
@@ -331,4 +357,25 @@ border-style: solid;
     width: 70%;
     height: 20%;
     transition: width 1s, height 1s;
+}
+
+@media (max-width: 1440px) {
+    .item {
+        margin: 20px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .item {
+        margin: 20px;
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 1079px) {
+    .item {
+        margin: 20px;
+        margin-left: -20px;
+    }
 }
